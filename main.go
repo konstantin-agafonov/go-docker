@@ -6,7 +6,12 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-    fmt.Print("row2")
+    fmt.Fprintf(w, "hello world!!\n")
+
+       /*  fmt.Println("row1")
+        fmt.Print("row2")
+        fmt.Println("row3")
+        fmt.Print("row4") */
 }
 
 func main() {
